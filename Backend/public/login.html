@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Tima Resturant</title>
+
+    <link rel="stylesheet" href="./entry.css" />
+    <script src="./login.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form action="./login" method="post" class="entry" id="login">
+        <h1 class="title">Log In</h1>
+        <h3 class="subtitle">
+          If you don't have account , <a href="/signup">create one</a>
+        </h3>
+        <div class="message">
+          <span style="color: red" class="msg-text"> </span>
+        </div>
+
+        <label for="email">Email </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter valid email"
+          required
+        />
+
+        <label for="password">Password </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="6"
+          placeholder="atleast 6 characters required"
+        />
+
+        <button id="btn">Log In</button>
+      </form>
+    </main>
+  </body>
+</html>

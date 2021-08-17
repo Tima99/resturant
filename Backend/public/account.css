@@ -1,0 +1,68 @@
+
+.account-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke!important;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.5rem;
+}
+#accountname{
+    text-shadow: 1px 1px .1rem black;
+    padding: .3rem;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+    color: white;
+}
+
+#accountname:hover{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.account-logo img{
+    width:  8vh;
+    height: 8vh;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin: 0 .5rem;
+}
+
+#out{
+    margin: 0 .7rem;
+    border: none;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: .9rem;
+    font-family: monospace;
+    padding: .4rem .3rem;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+
+#out:hover{
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (landscape : portrait) {
+    .account-logo img{
+        width: 8vw;
+        height: 8vw;
+    }
+}

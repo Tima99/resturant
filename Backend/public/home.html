@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <!-- Linking external css file-->
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 1120px)" href="./phone.css">
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    <title>project resturant</title>
+
+    <!-- Tima resturant -->
+    <script src="account.js" defer></script>
+    <link rel="stylesheet" href="account.css">
+    <script src="order.js" defer></script>
+    
+
+</head>
+<body onload="GetAccount()">
+
+    <!--NAVIGATION BAR-->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="mwebsiteurl">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#food-menu">Food Menu</a></li>
+            <li class="item"><a href="#contact">contact Us</a></li>
+            
+        </ul>
+
+        
+        <div class="account-logo">
+            <img src="./profileLogo.png" alt="profile">
+            <a href="/ordershistory" id="accountname"></a>
+            <button id="out" onclick="LogOut(this)">Log Out</button>
+        </div>
+    </nav>
+
+<!-- Navigation bar ends-->
+
+<!--Sections Home Starts-->
+
+<section id="home">
+    <h1 class="h-primary">Welcome To Family Resturant</h1>
+    <p>Best resturant in our town for family which every person can afford</p>
+    <p>we serves both vegetarian and Non-vegetarian food</p>
+    <button class="btn">Order Now</button>
+</section>
+
+<!-- Services Section Starts-->
+<section id="services-container">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="img1.png" alt="">
+            <h2 class="h-secondary center">Food Ordering</h2>
+            <p class="center">
+                We order food 24/7 from monday-sunday.But second saturday is Holiday
+
+            </p>
+        </div>
+        <div class="box">
+            <img src="img3.png" alt="">
+            <h2 class="h-secondary center">Food Delivery</h2>
+            <p class="center">
+                We deliver food everywhere in our town 24/7 with minimum delivery charges
+            </p>
+        </div>
+        <div class="box">
+            <img src="img3.png" alt="">
+            <h2 class="h-secondary center">Food Catering</h2>
+            <p class="center">
+            We also take orders for marriages,parties and get togethers.
+            </p>
+        </div>
+    </div>
+</section>
+<!--Services Section Ends-->
+
+<!-- Menu section starts-->
+<section id="food-menu">
+    <h2 class="food-menu-heading">Food Menu</h2>
+    <div class="food-menu-container container">
+        <div class="food-menu-item">
+        <div class="food-image">
+            <img src="pr1.png">
+        </div>
+        <div class="food-description">
+            <h2 class="food-title">Pizza</h2>
+            <p>We have pizza with all toping available.</p>
+            <p class="food-price">Price: &#8377; 220</p>
+            <button class="Buy">Buy</button>
+        </div>
+    </div>
+    <div class="food-menu-item">
+        <div class="food-image">
+            <img src="pr2.png">
+        </div>
+        <div class="food-description">
+            <h2 class="food-title">Burger</h2>
+            <p>We have large variety of burgers like ham burger, paneer burger, tandoori veg burger</p>
+            <p class="food-price">Price: &#8377; 90</p>
+            <button class="Buy">Buy</button>
+        </div>
+    </div>
+    <div class="food-menu-item">
+        <div class="food-image">
+            <img src="pr3.png">
+        </div>
+        <div class="food-description">
+            <h2 class="food-title">Chocolate Cake</h2>
+            <p>We have dark choco lava cake in our desert.</p>
+            <p class="food-price">Price: &#8377; 100</p>
+            <button class="Buy">Buy</button>
+        </div>
+    </div>
+    <div class="food-menu-item">
+        <div class="food-image">
+            <img src="pr4.png">
+        </div>
+        <div class="food-description">
+            <h2 class="food-title">Tandoori Chicken</h2>
+            <p>We have tandoori chicken with creamy layers and different spices</p>
+            <p class="food-price">Price: &#8377; 200</p>
+            <button class="Buy">Buy</button>
+        </div>
+    </div>
+    <div class="food-menu-item">
+        <div class="food-image">
+            <img src="pr5.png">
+        </div>
+        <div class="food-description">
+            <h2 class="food-title">Noodles</h2>
+            <p>We have dry noodles and ramen.</p>
+            <p class="food-price">Price: &#8377; 120</p>
+            <button class="Buy">Buy</button>
+        </div>
+    </div>
+    <div class="food-menu-item">
+        <div class="food-image">
+            <img src="pr6.png">
+        </div>
+        <div class="food-description">
+            <h2 class="food-title">Juice</h2>
+            <p>We have large variety of juices like mango, apple, orange, kiwi etc.</p>
+            <p class="food-price">Price: &#8377; 50</p>
+            <button class="Buy">Buy</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+    
+</section>
+<!-- Menu Section Ends-->
+
+<!-- Contact Section Starts-->
+    <section id="contact">
+        <h1 class="h-primary center">Place Order</h1>
+        <div id="contact-box">
+            <form action="/order" method="POST" id="deliveryForm">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone" required>
+                </div> 
+                <div class="form-group">
+                    <label for="address">Address: </label>
+                    <textarea name="address" id="address" cols="15" rows="6" required></textarea>
+                </div>    
+
+                <div onclick="ShowBuys()" class="showBuys">Buy Products (<span id="totalBuy">0</span>)</div>
+                <div id="orders">
+
+                </div>
+
+                <div class="form-action">
+                    <button class="form-button">Order</button>
+                </div>           
+            </form>
+        </div>
+    </section>
+    <!-- footer starts-->
+        <footer>
+            <div class="center">
+                Copyright &copy; WWW.myFamilyresturant.com. All rights reserved !
+            </div>
+        </footer>
+</body>
+</html>

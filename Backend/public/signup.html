@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./entry.css" />
+    <script src="./signup.js" defer></script>
+    <title>Welcome to Tima Resturant</title>
+  </head>
+  <body>
+    <main>
+      <form action="./signup" method="post" class="entry" id="signup">
+        <h1 class="title">Sign Up</h1>
+        <h3 class="subtitle">
+          Already have an account, <a href="/login">Log in</a> here
+        </h3>
+        <div class="message">
+          <span style="color: red" class="msg-text"> </span>
+        </div>
+
+        <label for="email">Email </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter valid email"
+          required
+        />
+
+        <label for="password">Password </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="6"
+          placeholder="atleast 6 characters required"
+        />
+
+        <label for="confirmpwd">Confirm Password</label>
+        <input
+          type="password"
+          name="confirmpwd"
+          id="confirmpwd"
+          placeholder="re-enter your password"
+          required
+        />
+
+        <button id="btn">Sign Up</button>
+      </form>
+    </main>
+  </body>
+</html>
